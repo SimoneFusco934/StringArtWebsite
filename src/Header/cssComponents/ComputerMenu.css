@@ -1,0 +1,79 @@
+.computer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 100%;
+  background-color: transparent;
+  margin-right: 10vw;
+
+  font-family: "IBM Plex Mono";
+  font-size: medium;
+
+}
+
+.computer-menu div {
+  cursor: pointer;
+  position: relative;
+  color: rgb(200, 200, 200);
+  transition: all 0.3s ease-out 0s;
+  
+}
+
+.computer-menu div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  width: 0%;
+  height: 4px;
+  background-image: linear-gradient(to left, rgba(50, 205, 50, 0), rgba(50, 205, 50, 0.75));
+  transition: width 0.3s ease-out;
+}
+
+.computer-menu div:hover::after {
+  width: 100%;
+}
+
+.computer-menu div:hover {
+  color: white;
+  /*border-bottom: 4px solid white;
+  animation: border-bottom-anim 0.3s forwards;
+  transform: scaleX(0);
+  transform-origin: left;*/
+}
+
+@keyframes border-bottom-anim {
+
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 600px){
+
+	.computer-menu {
+		display: none;
+	}
+}
+
+@media (min-width: 750px){
+
+	.computer-menu {
+		width: 450px;
+    font-size: large;
+	}
+}
+
+@media (min-width: 1100px){
+
+	.computer-menu {
+		width: 800px;
+    font-size: xx-large;
+	}
+}
+

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Lato&family=Montserrat&family=Poppins:wght@200&display=swap');
+
+.servizi {
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.servizi {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3),  0 10px 20px rgba(0, 0, 0, 0.15);;
+}
+
+.servizi h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 15px;
+
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.servizi h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 0px;
+  margin-top: 140px;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+
+  position: relative;
+}
+
+.servizi span {
+  width: 25vw;
+  height: 2px;
+  border-radius: 100px;
+  background-color: rgb(33, 33, 33);
+}
+
+.servizi p {
+  
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+  font-size: 1em;
+  color: black;
+
+  max-width: 85vw;
+  text-align: justify;
+}
+
+.servizi img {
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: center calc(100% + 35px);
+
+}
+
+.prodotti-p {
+  margin-top: 30px;
+}
+
+.servizi svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
