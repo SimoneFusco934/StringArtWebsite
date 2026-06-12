@@ -57,11 +57,11 @@ const Servizi = () => {
       <p>Tre dimensioni, una sola visione. Disponibile nei diametri di 35, 50 e 65 cm, ogni supporto è pensato per valorizzare l'opera attraverso equilibrio, proporzione e presenza visiva.</p>
       <img src={fotoTavolozza}></img>
 
-      <h2>Chiodi Oro <GoldNail /></h2>
+      <h2>Chiodi Dorati <GoldNail /></h2>
       <p>Eleganti e luminosi, i chiodini oro aggiungono un tocco di pregio alle tue creazioni, valorizzando il contrasto tra filo e supporto.</p>
       <img src={chiodoOro}></img>
 
-      <h2>Chiodi Argento <SilverNail /></h2>
+      <h2>Chiodi Argentati <SilverNail /></h2>
       <p>Moderni e versatili, i chiodini argento esaltano le linee della string art con una finitura brillante e contemporanea.</p>
       <img src={chiodoArgento}></img>
 

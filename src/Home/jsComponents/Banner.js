@@ -1,8 +1,6 @@
 import React from 'react';
 import '../cssComponents/Banner.css';
 
-
-
 const Banner = (props) => {
 
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../cssComponents/About.css';
 
-
+import Logo from '../../assets/LOGO.png';
 import Adamo from './Adamo';
 
 const About = () => {
@@ -15,12 +15,17 @@ const About = () => {
 
   return (
     <div className="about">
-
+      
       {/*<Adamo />*/}
+      <img src={Logo} className="img-logo"></img>
+
 
       <h1>STRING ART</h1>
       <span></span>
-      <p>La String Art è una raffinata tecnica artistica che trasforma linee geometriche in opere d'arte. Il processo ha inizio con una base lignea sulla quale vengono disposti con precisione i chiodi, definendo il perimetro dell'opera. Successivamente, attraverso un lavoro di intreccio manuale con un unico filo continuo, prendono vita forme, sfumature e volumi. Emozioni Intrecciate si pone l'obiettivo di reinterpretare questo artigianato tradizionale in chiave contemporanea. La nostra Start-Up è specializzata nella progettazione e realizzazione di opere uniche e su misura. Ogni pezzo è il risultato di ore di precisione millimetrica, il che garantisce l'assoluta irripetibilità di ogni creazione. Che si tratti di valorizzare uno spazio commerciale, un ufficio o un ambiente domestico, le nostre opere sono pensate per catturare l'attenzione e ridefinire il concetto di decorazione d'interni. Non creiamo semplici quadri, diamo forma alle vostre emozioni attraverso il filo.</p>
+      <p>La String Art è una raffinata tecnica artistica che trasforma linee geometriche in opere d'arte. Il processo ha inizio con una base lignea sulla quale vengono disposti con precisione i chiodi, definendo il perimetro dell'opera. Successivamente, attraverso un lavoro di intreccio manuale con un unico filo continuo, prendono vita forme, sfumature e volumi. Emozioni Intrecciate si pone l'obiettivo di reinterpretare questo artigianato tradizionale in chiave contemporanea. La nostra start-up è specializzata nella progettazione e realizzazione di opere uniche e su misura. Ogni pezzo è il risultato di ore di precisione millimetrica, il che garantisce l'assoluta irripetibilità di ogni creazione. Che si tratti di valorizzare uno spazio commerciale, un ufficio o un ambiente domestico, le nostre opere sono pensate per catturare l'attenzione e ridefinire il concetto di decorazione d'interni. Non creiamo semplici quadri, diamo forma alle vostre emozioni attraverso il filo.</p>
+      
+      
+
       <div className="about-slider-container">
         <div className="slider-image img-before" style={{clipPath: `polygon(0 0, ${sliderPos}% 0, ${sliderPos}% 100%, 0 100%)` }}></div>
         <div className="slider-image img-after"></div>
@@ -69,6 +74,8 @@ const About = () => {
         </svg>        
 
         </div>
+
+        
         <input type="range" min="0" max="100" value={sliderPos} className="slider" id="image-slider" onChange={handleSliderChange}></input>
       </div>
     </div>

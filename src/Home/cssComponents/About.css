@@ -124,3 +124,8 @@
 
   font-family: "Poppins", sans-serif;
 }
+
+.img-logo {
+  margin: -50px -30px -30px -30px;
+  width: 300px;  
+}

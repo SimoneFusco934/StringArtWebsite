@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      {/*<Header />*/}
       <Home scrollToContact={scrollToContact} />
       <Contact contactRef={contactRef} />
       <Footer />
